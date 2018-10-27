@@ -1,0 +1,24 @@
+# Build artifcats
+build/
+build*.txt
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+packages/
+*.suo
+*.tmp
+*.csproj.user
+
+.settings/
+
+# Binaries
+*.class
+*.jar
+*.war
+*.ear
+*.db
+
+
+# Local
+assembla*.zip
