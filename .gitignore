@@ -1,4 +1,4 @@
-# Build artifcats
+# Build artifacts
 build/
 build*.txt
 [Rr]elease/
@@ -10,7 +10,9 @@ packages/
 *.tmp
 *.csproj.user
 
+# Eclipse
 .settings/
+target/
 
 # Binaries
 *.class
@@ -19,6 +21,6 @@ packages/
 *.ear
 *.db
 
-
 # Local
 assembla*.zip
+
