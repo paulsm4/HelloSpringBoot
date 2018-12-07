@@ -1,13 +1,16 @@
 * Source reference: Spring Boot Hello World Example – JSP
   https://www.mkyong.com/spring-boot/spring-boot-hello-world-example-jsp/
   
-* Initial: create, build, execute .jsp in a SpringBoot app with embedded Tomcat
+* Initial (Linux): create, build, execute .jsp in a SpringBoot app with embedded Tomcat
   1. Eclipse > New > Maven project >
        Simple project= Y >
        groupId= com.mkyong, artifactId= spring-boot-web-jsp, packaging= .war, 
          name == description= Spring Boot Web JSP Example
      <= Auto-generates Eclipse project, pom.xml, Maven directory layout
-     
+
+     NOTE: 
+     The project's JRE System Library *must* be a JDK: configuring a "JRE-only" will fail at runtime.
+          
   2. Add readme.txt (this file)
   
   3. Update pom.xml:
@@ -62,14 +65,18 @@
    	       main.css
    	   - Add src > main > resources >
            application.properties
+     - Eclipse > Project > Properties > Facets >
+       <= Verify "Dyamamic Web App" facet already selected   
+     - Eclipse > src > main > webapp > 
+       <= Use as source folder= Y
 
   5. Eclipse > Save All
      Eclipse > Project > Refresh
      Eclipse > Project > Maven > Update Project
      Eclipse > pom.xml > Run As > Maven build > spring-boot:run
      Browser > http://localhost:8080/
-     <= Works!  See the .jsp!
+     <= Verify that the .jsp is correctly rendered in a browser window     
      
-		        
-  4. Eclipse > Project > Properties > Facets >
-       <= Verify "Dyamamic Web App" facet already selected   
+* Verified (re)build/execute on Windows
+
+     
