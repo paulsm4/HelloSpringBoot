@@ -13,6 +13,11 @@ packages/
 # Eclipse
 .settings/
 target/
+bin/
+
+# Gradle
+.gradle/
+
 
 # Binaries
 *.class
