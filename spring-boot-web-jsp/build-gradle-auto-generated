@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.springframework.boot'
+version = '1.0'
+
+description = """Spring Boot Web JSP Example"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "https://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.2.RELEASE'
+    compile group: 'javax.servlet', name: 'jstl', version:'1.2'
+    compile group: 'org.webjars', name: 'bootstrap', version:'3.3.7'
+    providedCompile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version:'1.4.2.RELEASE'
+    providedCompile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version:'8.5.6'
+    providedCompile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version:'4.6.1'
+}

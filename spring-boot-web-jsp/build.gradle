@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'com.mkyong'
+version = '1.0'
+description = 'Spring Boot Web JSP Example'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+     options.encoding = 'UTF-8'
+}
+
+
+repositories {
+     mavenCentral()
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web:1.4.2.RELEASE')
+    implementation('javax.servlet:jstl:1.2')
+    implementation('org.webjars:bootstrap:3.3.7')
+    implementation('org.springframework.boot:spring-boot-starter-tomcat:1.4.2.RELEASE')
+    implementation('org.apache.tomcat.embed:tomcat-embed-jasper:8.5.6')
+    implementation('org.eclipse.jdt.core.compiler:ecj:4.6.1')
+}

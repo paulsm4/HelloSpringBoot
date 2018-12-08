@@ -1,6 +1,9 @@
-10/26/18  PSM  Initial checkin
+10.26.18  PSM  Initial checkin
 
 10.29.18  PSM  Completed final (Reactive) tutorial
+
+12.07.18  PSM  sprng-boot-web-jsp (Initial draft): Eclipse/Maven build; Spring Boot 1.4.2.Release; Tomcat-only
+
 
                 
                

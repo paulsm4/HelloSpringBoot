@@ -79,4 +79,44 @@
      
 * Verified (re)build/execute on Windows
 
+===================================================================================================
+
+* Converted Maven => Gradle
+  1. Linux:
+     - sudo apt-get install gradle
+       <= Installed Gradle-3.4.1-7ubuntu
+     - cd $PROJ/spring-boot-web-jsp
+       gradle init
+       <= Auto-generated .gradle/*, gradle/*, settings.gradle, build.grsdle, gradlew, gradlew.bat
+
+  2. Edit new Gradle files:
+     - settings.gradle: OK as-is
+     - build.gradle   
+       <= Updated Java source/target 1.5 -> 1.8; updated "dependencies" syntax
+       
+  3. Eclipse > Project > Configure > Add Gradle Nature
+     <= OK: got "CONFIGURE SUCCESSFUL", uploaded .jar dependencies
+     
+  4. Compiled and executed:
+     - Eclipse > Project > Run As > Spring Boot app
+       <= OK: built successfully, ran embedded Tomcat on port 8080
+     - http://localhost:8080
+       <= Saw HTTP rendered correctly
+       
+  5. Eliminate Maven from project:
+     - Delete $PROJ/{target, pom.xml*}
+     - Eclipse > Project > Maven > Disable Maven Nature
+     - Eclipse > Project > Refresh
+       Eclipse > Project > Clean
+       Eclipse > build.gradle > Gradle > Refresh Gradle Project
+       Eclipse > Project > Run as > Spring Boot App
+         <= ERROR: Error: Could not find or load main class com.mkyong.SpringBootWebApplication
+       Eclipse > Project > Run As > Run Configurations >
+         <= Deleted the current run configuration (which happened to use "Maven libraries"),
+            re-created it (3 button clicks) ...
+            and the problem was resolved.  The (now Gradle-based) project built and ran successfully.
+       
+       
+       
+         
      

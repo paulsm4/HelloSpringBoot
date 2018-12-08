@@ -10,10 +10,14 @@ https://www.mkyong.com/spring-boot/spring-boot-non-web-application-example/
 https://dzone.com/articles/spring-boot-applicationrunner-and-commandlinerunne
     - test4
 
-  - SpringBoot + Angular tutorial
+  - SpringBoot + Angular tutorial:
 https://www.baeldung.com/spring-data-rest-intro
     - test5a (Prerequisite): Introduction to Spring Data REST
 https://www.baeldung.com/angularjs-crud-with-spring-data-rest
     - test5b: AngularJS CRUD Application with Spring Data REST
 https://dzone.com/articles/java-8-springboot-angularjs-bootstrap-springdata-j
     - test6: Creating a Simple Web App With Java 8, Spring Boot, and Angular
+
+  - SpringBoot + Embedded Tomcat:
+https://www.mkyong.com/spring-boot/spring-boot-hello-world-example-jsp/
+    - spring-boot-web-jsp
