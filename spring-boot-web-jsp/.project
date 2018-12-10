@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>spring-boot-web-jsp</name>
-	<comment></comment>
+	<comment>Spring Boot Web JSP Example</comment>
 	<projects>
 	</projects>
 	<buildSpec>
